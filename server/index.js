@@ -378,4 +378,8 @@ app.post("/similar-blogs", async (req, res) => {
     .catch((err) => res.status(500).json({ error: err.message }));
 });
 
+app.get("/", (req, res) => {
+  res.json({ Server: "I am Server" });
+});
+
 app.listen(PORT, () => console.log(`Server connected at Port ${PORT}`));
