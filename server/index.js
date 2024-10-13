@@ -17,7 +17,7 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 
 const app = express();
-const PORT = 8080;
+const port = process.env.PORT || 8080;
 const emailRegex =
   /^[a-zA-Z0-9]+([._-][0-9a-zA-Z]+)*@[a-zA-Z0-9]+([.-][0-9a-zA-Z]+)*\.[a-zA-Z]{2,}$/;
 
