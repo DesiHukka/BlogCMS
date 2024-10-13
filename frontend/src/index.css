@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  h1 {
+    @apply break-all text-3xl lg:text-4xl font-semibold;
+  }
+  h2 {
+    @apply break-all text-2xl lg:text-3xl font-medium;
+  }
+  h3 {
+    @apply break-all text-xl lg:text-2xl;
+  }
+  p {
+    @apply break-all hyphens-auto text-pretty;
+  }
+}

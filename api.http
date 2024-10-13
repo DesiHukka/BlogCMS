@@ -1,0 +1,33 @@
+// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTQ5OTE3M2VjNjliOWVlMDc2ODBjMSIsImlhdCI6MTcyNjUxMjkzOX0.3aFSk_giXxvlpClKyIGwLylsdAQbGXWkORoRxvb9SdM
+POST http://localhost:8080/sign-in HTTP/1.1
+Content-Type: application/json
+
+{
+       "email": "fauji@gmail.com",
+       "password": "fauji1"
+}
+
+###
+
+POST http://localhost:8080/latest-blogs HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTQ5OTE3M2VjNjliOWVlMDc2ODBjMSIsImlhdCI6MTcyNjUxMjkzOX0.3aFSk_giXxvlpClKyIGwLylsdAQbGXWkORoRxvb9SdM
+
+{
+        "query": "prashant"
+}
+
+######################################
+
+GET http://localhost:8080/total-blogs HTTP/1.1
+Content-Type: application/json
+
+####
+
+POST http://localhost:8080/similar-blogs HTTP/1.1
+Content-Type: application/json
+
+{
+       "tag":"autonomous vehicles",
+       "blog_id": "1727377301865/Cybersecurity-Challenges-in-Autonomous-Vehicles"
+}
