@@ -11,7 +11,7 @@ import SearchPage from "./pages/SearchPage";
 import UserPage from "./pages/UserPage";
 import BlogPage from "./pages/BlogPage";
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://blogcms-3r1s.onrender.com";
 export const UserContext = createContext({});
 
 function App() {
